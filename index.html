@@ -46,7 +46,7 @@
       "@context": "https://schema.org",
       "@type": "BeautySalon",
       "name": "Bohl Squared Massage & Nails Lounge",
-      "image": "https://bohl2nailslounge.co.za/assets/images/logo.jpg",
+      "image": "https://bohl2nailslounge.co.za/assets/images/logo.png",
       "@id": "https://bohl2nailslounge.co.za/",
       "url": "https://bohl2nailslounge.co.za/",
       "telephone": "+27769791311",
@@ -80,17 +80,18 @@
       "sameAs": [
         "https://www.facebook.com/Bohl2lounge",
         "https://www.instagram.com/bohl2nails_massage",
-        "https://wa.me/27769791311"
+        "https://wa.me/27760928561"
       ],
       "priceRange": "R200 - R1500"
     }
     </script>
     
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <!-- Note: Favicon files not in project - uncomment lines below if added -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png"> -->
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png"> -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png"> -->
+    <!-- <link rel="manifest" href="./site.webmanifest"> -->
     
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
@@ -98,7 +99,7 @@
     <!-- Luxury Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
     
     <style>
         /* Luxury Typography System */
@@ -106,6 +107,7 @@
             --montserrat: 'Montserrat', sans-serif;
             --poppins: 'Poppins', sans-serif;
             --playfair: 'Playfair Display', serif;
+            --dancing-script: 'Dancing Script', cursive;
             --primary-color: #8a7352;
             --secondary-color: #1a1a1a;
             --accent-color: #c5a880;
@@ -176,6 +178,16 @@
         /* Section Styling */
         .w3l-bottom-grids, .features-grids-6, .w3l-content-with-photo-4 {
             background-color: var(--light-bg);
+        }
+        
+        /* Terms and Conditions Styling */
+        .terms-text {
+            font-family: var(--dancing-script);
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ff69b4;
+            margin-top: 2rem;
+            text-shadow: 1px 1px 2px rgba(255, 105, 180, 0.3);
         }
         
         /* Testimonial Styling */
@@ -463,7 +475,7 @@
 
 <body>
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/27769791311" class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
+    <a href="https://wa.me/27760928561" class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
         <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="WhatsApp" width="60" height="60">
     </a>
     <style>
@@ -525,10 +537,9 @@
 	<header id="site-header" class="fixed-top">
 		<div class="container-fluid">
 			<nav class="navbar navbar-expand-lg navbar-dark stroke">
-				<h1> 
-					<a class="navbar-brand" href="index.html">
-						<span class="sub-logo">B</span>ohl <span class="sub-logo">S</span>quared<br>
-						<small style="font-size: 14px; font-weight: 400;">Massage & Nails Lounge</small>
+				<h1>
+					<a class="navbar-brand" href="index.html" aria-label="Bohl Squared home">
+						<img src="assets/images/logo.png" alt="Bohl Squared Massage & Nails Lounge logo">
 					</a>
 				</h1>
 				<button class="navbar-toggler collapsed bg-gradient" type="button" data-toggle="collapse"
@@ -553,7 +564,7 @@
 							<a class="nav-link" href="contact.html">Contact</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="healthbot.html">Booking</a>
+							<a class="nav-link" href="contact.html">Booking</a>
 						</li>
 					</ul>
 					<!--/search-right-->
@@ -657,76 +668,64 @@
 	<!-- main-slider -->
 	<section class="w3l-main-slider position-relative" id="home">
 		<div class="companies20-content">
-			<div class="owl-one owl-carousel owl-theme">
+				<div class="owl-one owl-carousel owl-theme">
 				<div class="item">
-					<li>
-						<div class="slider-info banner-view bg bg2">
-							<div class="banner-info">
-								<div class="container">
-									<div class="banner-info-bg text-center">
-										<h4 class="sub-font">Springs' Sanctuary for Beauty & Wellness</h4>
-										<h5>Experience Luxury Nail Care & Therapeutic Massage</h5>
-										<div class="banner-buttons mt-md-5 mt-4">
-											<a class="btn btn-style btn-primary" href="services.html">View Our Services</a>
-										</div>
-									</div>
+					<div class="slider-info banner-view bg bg2">
+						<div class="banner-info">
+							<div class="container">
+								<div class="banner-info-bg text-center">
 								</div>
 							</div>
 						</div>
-					</li>
+					</div>
 				</div>
 				<div class="item">
-					<li>
-						<div class="slider-info  banner-view banner-top1 bg bg2">
-							<div class="banner-info">
-								<div class="container">
-									<div class="banner-info-bg text-center">
-										<h4 class="sub-font">Rejuvenate Your Body & Mind</h4>
-										<h5>Professional Spa Therapy in Gauteng</h5>
-										<div class="banner-buttons mt-md-5 mt-4">
-											<a class="btn btn-style btn-primary" href="services.html">View Our Services</a>
-										</div>
+					<div class="slider-info  banner-view banner-top1 bg bg2">
+						<div class="banner-info">
+							<div class="container">
+								<div class="banner-info-bg text-center">
+									<h4 class="sub-font">Rejuvenate Your Body & Mind</h4>
+									<h5>Professional Spa Therapy in Gauteng</h5>
+									<div class="banner-buttons mt-md-5 mt-4">
+										<a class="btn btn-style btn-primary" href="services.html">View Our Services</a>
 									</div>
 								</div>
 							</div>
 						</div>
-					</li>
+					</div>
 				</div>
 				<div class="item">
-					<li>
-						<div class="slider-info banner-view banner-top2 bg bg2">
-							<div class="banner-info">
-								<div class="container">
-									<div class="banner-info-bg text-center">
-										<h4 class="sub-font">Pampering Perfected</h4>
-										<h5>Luxury Pedicures & Relaxing Facials</h5>
-										<div class="banner-buttons mt-md-5 mt-4">
-											<a class="btn btn-style btn-primary" href="services.html">View Our Services</a>
-										</div>
+					<div class="slider-info banner-view banner-top2 bg bg2">
+						<div class="banner-info">
+							<div class="container">
+								<div class="banner-info-bg text-center">
+									<h4 class="sub-font">Pampering Perfected</h4>
+									<h5>Luxury Pedicures & Relaxing Facials</h5>
+									<div class="banner-buttons mt-md-5 mt-4">
+										<a class="btn btn-style btn-primary" href="services.html">View Our Services</a>
 									</div>
 								</div>
 							</div>
 						</div>
-					</li>
+					</div>
 				</div>
 				<div class="item">
-					<li>
-						<div class="slider-info banner-view banner-top3 bg bg2">
-							<div class="banner-info">
-								<div class="container">
-									<div class="banner-info-bg text-center">
-										<h4 class="sub-font">The Ultimate Escape</h4>
-										<h5>Book Your Couples Massage & Spa Day</h5>
-										<div class="banner-buttons mt-md-5 mt-4">
-											<a class="btn btn-style btn-primary" href="services.html">View Our Services</a>
-										</div>
+					<div class="slider-info banner-view banner-top3 bg bg2">
+						<div class="banner-info">
+							<div class="container">
+								<div class="banner-info-bg text-center">
+									<h4 class="sub-font">The Ultimate Escape</h4>
+									<h5>Book Your Couples Massage & Spa Day</h5>
+									<div class="banner-buttons mt-md-5 mt-4">
+										<a class="btn btn-style btn-primary" href="services.html">View Our Services</a>
 									</div>
 								</div>
 							</div>
 						</div>
-					</li>
+					</div>
 				</div>
 			</div>
+
 			<div class="banhny-timing">MON - Sun : 09:00AM - 18:00PM </div>
 			<div class="banhny-left-botm">Natural & Glowing Makeup Look</div>
 			<div class="scrollhny-btn">
@@ -765,31 +764,28 @@
 			<div class="grids-area-hny main-cont-wthree-fea row">
 				<div class="col-lg-4 col-md-6 grids-feature mb-md-0 mb-4">
 					<div class="area-box">
-						<span class="fa fa-bath"></span>
-						<a href="#feature">
-							<h4 class="title-head">Luxury Spa Therapy</h4>
-						</a>
-						<p>Our premium spa therapies in Springs are designed to detoxify, improve circulation, and promote deep relaxation for total well-being.</p>
+						<img src="assets/images/boh1.png" alt="Luxury Spa Therapy" class="img-fluid rounded shadow">
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 grids-feature mb-md-0 mb-4">
 					<div class="area-box active">
-						<span class="fa fa-american-sign-language-interpreting active"></span>
-						<a href="#feature">
-							<h4 class="title-head">Deep Tissue & Relaxing Massage</h4>
-						</a>
-						<p>Target muscle tension and stress with our therapeutic massages. From Swedish to deep tissue, find the perfect treatment for pain relief and rejuvenation.</p>
+						<img src="assets/images/bohl2.jpg" alt="Deep Tissue & Relaxing Massage" class="img-fluid rounded shadow">
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 grids-feature mb-md-0 mb-4">
 					<div class="area-box thrid">
-						<span class="fa fa-flask"></span>
-						<a href="#feature">
-							<h4 class="title-head">Holistic Aroma Therapy</h4>
-						</a>
-						<p>Enhance your mood and alleviate stress with our custom aroma therapy sessions. We use essential oils to create a sensory experience that soothes the mind.</p>
+						<img src="assets/images/bohl3.jpg" alt="Holistic Aroma Therapy" class="img-fluid rounded shadow">
 					</div>
 				</div>
+			</div>
+			<div class="text-center mt-4">
+				<p class="terms-text">Terms and Conditions</p>
+			</div>
+			<div class="text-center mt-4">
+				<img src="assets/images/bohl4.png" alt="Bohl 4" class="img-fluid rounded shadow" style="max-width: 300px;">
+			</div>
+			<div class="text-center mt-4">
+				<img src="assets/images/bohl5.png" alt="Bohl 5" class="img-fluid rounded shadow" style="max-width: 300px;">
 			</div>
 		</div>
 	</section>
@@ -937,7 +933,7 @@
 				</div>
 				<div class="item">
 					<div class="news-img">
-						<a href="#"><img src="assets/images/ab2.jpg" class="img-fluid" alt="Relaxing spa pedicure treatment"></a>
+						<a href="#"><img src="assets/images/ab2.png" class="img-fluid" alt="Relaxing spa pedicure treatment"></a>
 						<div class="title-wrap">
 							<a href="#"><h4 class="title">Spa Pedicures</h4></a>
 							<a href="#" class="text-right"><span class="fa fa-arrow-right"></span></a>
@@ -1013,7 +1009,7 @@
 						<div class="col-lg-4 offset-md-3 offset-lg-0 col-md-6 mt-5">
 							<div class="grids5-info">
 								<a href="blog-single.html" class="d-block zoom">
-									<img src="assets/images/ab6.jpg" alt="Natural cosmetic products on display" class="img-fluid news-image">
+									<img src="assets/images/ab6.png" alt="Natural cosmetic products on display" class="img-fluid news-image">
 								</a>
 								<div class="blog-info">
 									<p class="date">5 Jan 2026</p>
@@ -1156,7 +1152,7 @@
 											<a href="#"><img class="rounded img-fluid img-responsive" src="assets/images/ab1.jpg" alt="Training image"></a>
 										</div>
 										<div class="gd-img-ft">
-											<a href="#"><img class="rounded img-fluid img-responsive" src="assets/images/ab2.jpg" alt="Pedicure image"></a>
+											<a href="#"><img class="rounded img-fluid img-responsive" src="assets/images/ab2.png" alt="Pedicure image"></a>
 										</div>
 										<div class="gd-img-ft">
 											<a href="#"><img class="rounded img-fluid img-responsive" src="assets/images/ab3.jpg" alt="Facial image"></a>
@@ -1208,7 +1204,9 @@
 <script>
 $(document).ready(function () {
     // Initialize counters
-    $('.counter').countUp();
+    if ($('.counter').length) {
+        $('.counter').countUp();
+    }
     
     // Initialize Owl Carousels
     $('.owl-one').owlCarousel({

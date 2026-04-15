@@ -68,10 +68,11 @@
     </script>
     
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <!-- Note: Favicon files not in project - uncomment lines below if added -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png"> -->
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png"> -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png"> -->
+    <!-- <link rel="manifest" href="./site.webmanifest"> -->
     
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
@@ -426,8 +427,8 @@
 	<header id="site-header" class="fixed-top">
 		<div class="container-fluid">
 			<nav class="navbar navbar-expand-lg navbar-dark stroke">
-				<h1> <a class="navbar-brand" href="index.html">
-					<span class="sub-logo">B</span>ohl <span class="sub-logo">S</span>quared Massage & Nails Lounge
+				<h1> <a class="navbar-brand" href="index.html" aria-label="Bohl Squared home">
+					<img src="assets/images/logo.png" alt="Bohl Squared Massage & Nails Lounge logo">
 					</a></h1>
 				<button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
 					data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
@@ -533,7 +534,7 @@
 							<ul class="icon-rounded">
 								<li><a class="social-link facebook" href="https://www.facebook.com/Bohl2lounge" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
 								<li><a class="social-link instagram" href="https://www.instagram.com/bohl2nails_massage" target="_blank"><i class="fab fa-instagram"></i></a></li>
-								<li><a class="social-link whatsapp" href="https://wa.me/27769791311" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+								<li><a class="social-link whatsapp" href="https://wa.me/27760928561" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -568,7 +569,7 @@
 			<div class="container py-lg-4">
 				<div class="content-info-in row">
 					<div class="content-right col-lg-6 order-lg-2">
-						<img src="assets/images/ab6.jpg" class="img-fluid rounded" alt="Premium nail care services at our Springs salon" loading="lazy">
+						<img src="assets/images/ab6.png" class="img-fluid rounded" alt="Premium nail care services at our Springs salon" loading="lazy">
 					</div>
 					<div class="content-left col-lg-6 order-lg-1 pl-lg-4">
 						<h6 class="sub-title" style="font-family: var(--montserrat);">
@@ -681,7 +682,7 @@
 			<div class="row w3-services-grids">
 				<div class="col-lg-4 col-md-6 luxe-grid mb-4">
 					<div class="luxe-grid-info">
-						<a href="#"><img src="assets/images/ab1.jpg" class="img-fluid" alt="Professional beauty training courses in Springs" loading="lazy"></a>
+						<a href="#"><img src="assets/images/boh1.png" class="img-fluid" alt="Luxury Spa Therapy" loading="lazy"></a>
 						<div class="p-4">
 							<a href="#" class="cause-title-wrap">
 								<h4 class="cause-title" style="font-family: var(--montserrat);">Professional Beauty Training</h4>
@@ -695,7 +696,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6 luxe-grid mb-4">
 					<div class="luxe-grid-info">
-						<a href="#"><img src="assets/images/ab2.jpg" class="img-fluid" alt="Luxury spa pedicure treatment" loading="lazy"></a>
+						<a href="#"><img src="assets/images/bohl2.jpg" class="img-fluid" alt="Deep Tissue & Relaxing Massage" loading="lazy"></a>
 						<div class="p-4">
 							<a href="#" class="cause-title-wrap">
 								<h4 class="cause-title" style="font-family: var(--montserrat);">Luxury Spa Pedicure</h4>
@@ -709,7 +710,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6 luxe-grid mb-4">
 					<div class="luxe-grid-info">
-						<a href="#"><img src="assets/images/ab3.jpg" class="img-fluid" alt="Professional facial and skincare treatments" loading="lazy"></a>
+						<a href="#"><img src="assets/images/bohl3.jpg" class="img-fluid" alt="Holistic Aroma Therapy" loading="lazy"></a>
 						<div class="p-4">
 							<a href="#" class="cause-title-wrap">
 								<h4 class="cause-title" style="font-family: var(--montserrat);">Revitalizing Facial Treatments</h4>
@@ -1082,7 +1083,9 @@
 <script>
 $(document).ready(function () {
     // Initialize counters
-    $('.counter').countUp();
+    if ($('.counter').length) {
+        $('.counter').countUp();
+    }
     
     // Initialize magnific popup
     $('.popup-with-zoom-anim').magnificPopup({
