@@ -2292,6 +2292,126 @@ select.form-control:focus::-ms-value {
   background-color: #fff;
 }
 
+/* Global responsive improvements for Bohl Squared site */
+body {
+  overflow-x: hidden;
+  padding-top: 92px;
+}
+
+#site-header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 2px 18px rgba(0, 0, 0, 0.08);
+  z-index: 1030;
+}
+
+.navbar-brand img {
+  max-height: 58px;
+  width: auto;
+  display: block;
+}
+
+.navbar-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+  background-color: #1a1a1a;
+  color: #ff69b4 !important;
+  border-radius: 4px;
+}
+
+.navbar-dark .navbar-nav .nav-link.active:hover {
+  background-color: #2a2a2a;
+  color: #ff1493 !important;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.w3l-bottom-grids .bottomhny-gd-ingf,
+.features-grids-6 .area-box,
+.w3-services .luxe-grid-info,
+.w3l-content-4 .content-4-main,
+.w3l-pricing-16-main {
+  width: 100%;
+}
+
+@media (max-width: 991.98px) {
+  body {
+    padding-top: 110px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container,
+  .container-fluid {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hny-title,
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1.2;
+  }
+
+  .hny-title {
+    font-size: 1.8rem;
+  }
+
+  .sub-title {
+    font-size: 0.95rem;
+  }
+
+  .btn-style,
+  .btn {
+    padding: 12px 18px;
+    width: 100%;
+    min-width: auto;
+  }
+
+  .search-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .search-right .hnysearch-icon,
+  .search-right .domain {
+    margin: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body {
+    padding-top: 120px;
+  }
+
+  .navbar-toggler {
+    width: 48px;
+    height: 48px;
+  }
+
+  .navbar-nav .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .form-control-file,
 .form-control-range {
   display: block;
@@ -14328,6 +14448,8 @@ p.title-para {
 .navbar .navbar-brand img {
   max-width: 140px;
   transition: all 0.5s ease;
+  background: transparent;
+  display: block;
 }
 
 .navbar-expand-lg .navbar-nav .nav-item {
@@ -15130,7 +15252,7 @@ ul.icon-rounded.address li p span.fa {
 }
 
 .w3l-main-slider .banner-view {
-  background: url(../images/banner1.jpg) no-repeat center;
+  background: url(../images/banner1.png) no-repeat center;
   background-size: cover;
   height: 100vh;
   position: relative;
@@ -15140,7 +15262,7 @@ ul.icon-rounded.address li p span.fa {
 }
 
 .w3l-main-slider .banner-top1 {
-  background: url(../images/banner2.jpg) no-repeat center;
+  background: url(../images/banner2.png) no-repeat center;
   background-size: cover;
 }
 
@@ -15150,7 +15272,7 @@ ul.icon-rounded.address li p span.fa {
 }
 
 .w3l-main-slider .banner-top3 {
-  background: url(../images/banner4.jpg) no-repeat center;
+  background: url(../images/banner4.png) no-repeat center;
   background-size: cover;
 }
 
@@ -15916,10 +16038,18 @@ button.owl-next {
   margin-bottom: -100px;
 }
 
+.features-grids-6 .area-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 0;
+  padding: 0;
+}
+
 .features-grids-6 .area-box {
   text-align: center;
   background-color: #ffffff;
-  padding: 90px 50px;
+  padding: 20px;
   position: relative;
   z-index: 1;
   -webkit-box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.05);
@@ -15995,7 +16125,7 @@ span.fa.fa-cogs.active {
 
 @media (max-width:767px) {
   .features-grids-6 .area-box {
-    padding: 60px 40px;
+    padding: 15px;
 
   }
 }
@@ -16917,7 +17047,7 @@ div#small-dialog iframe {
 
 /*-- //services --*/
 .w3l-progress-6 {
-  background: url(../images/banner2.jpg) no-repeat center;
+  background: url(../images/banner2.png) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -18212,7 +18342,7 @@ h4.post-title a:hover,
 
 /*--/w3l-newsletter--*/
 .w3l-newsletter {
-  background: url(../images/banner2.jpg) no-repeat center;
+  background: url(../images/banner2.png) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
