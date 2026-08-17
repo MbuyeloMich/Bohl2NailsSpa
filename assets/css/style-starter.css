@@ -2306,7 +2306,7 @@ body {
 }
 
 .navbar-brand img {
-  max-height: 58px;
+  max-height: 90px;
   width: auto;
   display: block;
 }
@@ -14653,7 +14653,7 @@ nav ul li a:hover {
   }
 
   .navbar .navbar-brand img {
-    max-width: 109px;
+    max-width: 140px;
   }
 
   .navbar-expand-lg .btn-gradient {
@@ -15261,6 +15261,26 @@ ul.icon-rounded.address li p span.fa {
   align-items: center;
 }
 
+@media (max-width: 991px) {
+  .w3l-main-slider .banner-view {
+    height: 60vh;
+    background-position: center top;
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 480px) {
+  .w3l-main-slider .banner-view {
+    height: 50vh;
+    background-position: center top;
+    background-size: cover;
+  }
+  .w3l-main-slider .banner-view .container {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+}
+
 .w3l-main-slider .banner-top1 {
   background: url(../images/banner2.png) no-repeat center;
   background-size: cover;
@@ -15273,6 +15293,11 @@ ul.icon-rounded.address li p span.fa {
 
 .w3l-main-slider .banner-top3 {
   background: url(../images/banner4.png) no-repeat center;
+  background-size: cover;
+}
+
+.w3l-main-slider .banner-top4 {
+  background: url(../images/banner1.png) no-repeat center;
   background-size: cover;
 }
 
